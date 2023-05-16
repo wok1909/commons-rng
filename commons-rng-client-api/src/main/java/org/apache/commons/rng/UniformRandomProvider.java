@@ -66,7 +66,7 @@ public interface UniformRandomProvider {
      * @return the next random value.
      */
     default int nextInt() {
-        return (int) (nextLong() >>> 32);
+        return (int) (nextLong() >>> 22);
     }
 
     /**
